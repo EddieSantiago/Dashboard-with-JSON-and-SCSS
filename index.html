@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main-container">
+    <div class="profile">
+      <div class="profile__information">
+        <img src="images/image-jeremy.png" alt="User" class="profile__information-img">
+
+        <div class="profile__information-texts">
+          <p class="profile__information-texts__paragraph">Report for</p>
+          <h3 class="profile__information-texts__title">Jeremy Robson</h3>
+        </div>
+      </div>
+
+      <div class="profile__options">
+        <div class="profile__options-container">
+          <input type="radio" id="radio-daily" name="dashboard-type" class="profile__options-container__radio">
+          <label for="radio-daily" class="profile__options-container__label active">Daily</label>
+        </div>
+
+        <div class="profile__options-container">
+          <input type="radio" id="radio-weekly" name="dashboard-type" class="profile__options-container__radio">
+          <label for="radio-weekly" class="profile__options-container__label">Weekly</label>
+        </div>
+
+        <div class="profile__options-container">
+          <input type="radio" id="radio-monthly" name="dashboard-type" class="profile__options-container__radio">
+          <label for="radio-monthly" class="profile__options-container__label">Monthly</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard">
+      <div class="dashboard__item" data-section="Work">
+        <div class="dashboard__item-background"></div>
+        <div class="dashboard__item-information">
+          <div class="dashboard__item-information__left">
+            <h3 class="dashboard__item-information__left__title">Work</h3>
+            <h2 class="dashboard__item-information__left__hours"></h2>
+          </div>
+
+          <div class="dashboard__item-information__right">
+            <img src="images/icon-ellipsis.svg" alt="Options" class="dashboard__item-information__right__options">
+            <p class="dashboard__item-information__right__previous"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard__item" data-section="Play">
+        <div class="dashboard__item-background"></div>
+        <div class="dashboard__item-information">
+          <div class="dashboard__item-information__left">
+            <h3 class="dashboard__item-information__left__title">Play</h3>
+            <h2 class="dashboard__item-information__left__hours"></h2>
+          </div>
+
+          <div class="dashboard__item-information__right">
+            <img src="images/icon-ellipsis.svg" alt="Options" class="dashboard__item-information__right__options">
+            <p class="dashboard__item-information__right__previous"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard__item" data-section="Study">
+        <div class="dashboard__item-background"></div>
+        <div class="dashboard__item-information">
+          <div class="dashboard__item-information__left">
+            <h3 class="dashboard__item-information__left__title">Study</h3>
+            <h2 class="dashboard__item-information__left__hours"></h2>
+          </div>
+
+          <div class="dashboard__item-information__right">
+            <img src="images/icon-ellipsis.svg" alt="Options" class="dashboard__item-information__right__options">
+            <p class="dashboard__item-information__right__previous"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard__item" data-section="Exercise">
+        <div class="dashboard__item-background"></div>
+        <div class="dashboard__item-information">
+          <div class="dashboard__item-information__left">
+            <h3 class="dashboard__item-information__left__title">Exercise</h3>
+            <h2 class="dashboard__item-information__left__hours"></h2>
+          </div>
+
+          <div class="dashboard__item-information__right">
+            <img src="images/icon-ellipsis.svg" alt="Options" class="dashboard__item-information__right__options">
+            <p class="dashboard__item-information__right__previous"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard__item" data-section="Social">
+        <div class="dashboard__item-background"></div>
+        <div class="dashboard__item-information">
+          <div class="dashboard__item-information__left">
+            <h3 class="dashboard__item-information__left__title">Social</h3>
+            <h2 class="dashboard__item-information__left__hours"></h2>
+          </div>
+
+          <div class="dashboard__item-information__right">
+            <img src="images/icon-ellipsis.svg" alt="Options" class="dashboard__item-information__right__options">
+            <p class="dashboard__item-information__right__previous"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard__item" data-section="Self Care">
+        <div class="dashboard__item-background"></div>
+        <div class="dashboard__item-information">
+          <div class="dashboard__item-information__left">
+            <h3 class="dashboard__item-information__left__title">Self Care</h3>
+            <h2 class="dashboard__item-information__left__hours"></h2>
+          </div>
+
+          <div class="dashboard__item-information__right">
+            <img src="images/icon-ellipsis.svg" alt="Options" class="dashboard__item-information__right__options">
+            <p class="dashboard__item-information__right__previous"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/EddieSantiago?tab=repositories">Eddie Santiago Delgado</a>.
+  </div>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
